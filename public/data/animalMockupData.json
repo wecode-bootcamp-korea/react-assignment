@@ -1,0 +1,58 @@
+[
+  {
+    "title": "고양이",
+    "age": " 4살",
+    "gender": " male",
+    "home": " 춘천",
+    "image": "/images/cat.jpeg"
+  },
+  {
+    "title": "고냥이",
+    "age": " 14살",
+    "gender": " female",
+    "home": " 양평",
+    "image": "/images/cat.jpeg"
+  },
+  {
+    "title": "고용이",
+    "age": " 7살",
+    "gender": " male",
+    "home": " 천안",
+    "image": "/images/cat.jpeg"
+  },
+  {
+    "title": "모울이",
+    "age": " 1살",
+    "gender": " female",
+    "home": " 부산",
+    "image": "/images/cat.jpeg"
+  },
+  {
+    "title": "곰율이",
+    "age": " 3살",
+    "gender": " male",
+    "home": " 노원",
+    "image": "/images/cat.jpeg"
+  },
+  {
+    "title": "고울이",
+    "age": " 11살",
+    "gender": " male",
+    "home": " 평양",
+    "image": "/images/cat.jpeg"
+  },
+  {
+    "title": "고물이",
+    "age": " 9살",
+    "gender": " male",
+    "home": " 전주",
+    "image": "/images/cat.jpeg"
+  },
+  {
+    "title": "기양이",
+    "age": " 2살",
+    "gender": " male",
+    "home": " 충청",
+    "image": "/images/cat.jpeg"
+  }
+]

@@ -1,0 +1,74 @@
+@import "/src/style/mixin.scss";
+@import "/src/style/variables.scss";
+
+.introduce {
+  .introContainer {
+    border: 1px solid black;
+    width: 110px;
+    border-radius: 5px;
+
+    .main {
+      margin: 8px;
+      background-color: black;
+      border-radius: 5px;
+
+      .content {
+        @include flexCenter;
+        color: white;
+        height: 100px;
+      }
+
+      &.red {
+        background-color: rgb(255, 0, 0);
+      }
+
+      &.yellow {
+        background-color: rgb(255, 255, 0);
+      }
+
+      &.green {
+        background-color: rgb(0, 128, 0);
+      }
+
+      &.blue {
+        background-color: rgb(0, 0, 255);
+      }
+    }
+
+    .userInfo {
+      .user {
+        margin: 0px 0px 5px 10px;
+        font-size: 10px;
+
+        &.color {
+          font-weight: 400;
+        }
+
+        .userName {
+          &:hover {
+            color: $green;
+          }
+        }
+
+        .inputText {
+          width: 55%;
+          font-size: 8px;
+        }
+
+        .button {
+          padding: 0;
+          width: 30px;
+          font-size: 8px;
+        }
+
+        .linkToProduct {
+          font-size: 8px;
+        }
+      }
+    }
+    &.color {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+}

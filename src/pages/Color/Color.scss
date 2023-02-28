@@ -1,0 +1,33 @@
+.color {
+  .colorResult {
+    display: inline-block;
+    background-color: black;
+    border: 2px solid black;
+    width: 15px;
+    height: 15px;
+  }
+
+  .colorBox {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .colorWhite {
+    background-color: white;
+  }
+
+  .colorRed {
+    background-color: red;
+  }
+
+  .colorYellow {
+    background-color: yellow;
+  }
+}
