@@ -1,15 +1,16 @@
-import React from "react";
 import "./Count.scss";
+import React from "react";
 
-const Count = () => {
+const Count = (props) => {
+  
   return (
     <div className="count">
       <div className="countInput">
-        <button onClick={() => {}}>-</button>
-        <div className="countInputText">1</div>
-        <button onClick={() => {}}>+</button>
+        <button onClick={props.minusCount}>-</button>
+        <div className="countInputText">{props.count}</div>
+        <button onClick={props.plusCount}>+</button>
       </div>
-      <button className="resetBtn" onClick={() => {}}>
+      <button className="resetBtn" onClick={props.resetCount}>
         reset
       </button>
     </div>
