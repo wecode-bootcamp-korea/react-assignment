@@ -1,0 +1,66 @@
+@import "../../style/mixin.scss";
+
+    .introduce {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+        .wecodebox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+            margin-bottom: 50px;
+            
+            .wecodeboxColor {
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                width: 200px;
+                color: white;
+                background-color: black;
+                border-radius: 10px;
+                font-size: 30px;
+            }
+            .wecodeboxInputButton {
+                display: flex;
+            }
+
+        p {
+            margin-right: 150px;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+   
+    .miniBoxContainer{
+        display: flex;
+        justify-content: center;
+        
+        .miniBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 200px;
+            width: 150px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 0px 10px;
+            
+            .miniBoxColor {
+                margin:20px 0px;
+                width: 80px;
+                height: 80px;
+                border-radius: 10px;
+            }
+        }
+    }
+}

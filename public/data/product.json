@@ -1,0 +1,30 @@
+[
+    {
+        "id" :1, 
+        "title":"골프공(white)",
+        "color": "white",
+        "price": 300,
+        "count": 1,
+        "review":"",
+        "product_image": "/images/golf-ball-white.jpg"
+    },
+    {
+        "id" :2,
+        "title": "골프공(red)",
+        "color": "red",
+        "price": 500,
+        "count": 1,
+        "review":"",
+        "product_image": "/images/golf-ball-red.jpg"
+    },
+    {
+        "id" :3,
+        "title": "골프공(yellow)",
+        "color": "yellow",
+        "price": 1000,       
+        "count": 1,
+        "review":"",
+        "product_image": "/images/golf-ball-yellow.jpg"
+    }
+
+]
