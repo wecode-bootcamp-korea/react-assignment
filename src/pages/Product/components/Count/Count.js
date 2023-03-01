@@ -1,15 +1,35 @@
 import React from "react";
 import "./Count.scss";
 
-const Count = () => {
+const Count = (props) => {
+  const { number, setNumber } = props;
+
+  const subtract = () => {
+    setNumber(number - 1);
+    if (number < 2) {
+      setNumber(1);
+    }
+  };
+
   return (
     <div className="count">
       <div className="countInput">
-        <button onClick={() => {}}>-</button>
-        <div className="countInputText">1</div>
-        <button onClick={() => {}}>+</button>
+        <button onClick={subtract}>-</button>
+        <div className="countInputText">{number}</div>
+        <button
+          onClick={() => {
+            setNumber(number + 1);
+          }}
+        >
+          +
+        </button>
       </div>
-      <button className="resetBtn" onClick={() => {}}>
+      <button
+        className="resetBtn"
+        onClick={() => {
+          setNumber(1);
+        }}
+      >
         reset
       </button>
     </div>

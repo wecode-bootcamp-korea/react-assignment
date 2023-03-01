@@ -1,0 +1,73 @@
+@import "../../style/variables.scss";
+@import "../../style/mixin.scss";
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  .wecodeWrap {
+    width: 360px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 7px;
+
+    .wecode {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 20px 20px 12px 20px;
+      width: 320px;
+      height: 320px;
+      color: white;
+      background-color: black;
+      border-radius: 7px;
+      font-size: 40px;
+    }
+
+    .name {
+      margin: 5px 20px;
+      font-weight: bold;
+
+      &:hover {
+        color: $green-color;
+      }
+    }
+
+    .class {
+      margin: 5px 20px;
+    }
+
+    input {
+      margin-left: 18px;
+      width: 250px;
+    }
+    a {
+      .moveToProduct {
+        margin: 0 18px;
+      }
+    }
+  }
+
+  .colorCardWrap {
+    display: flex;
+
+    .red {
+      background-color: red;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+  }
+}
