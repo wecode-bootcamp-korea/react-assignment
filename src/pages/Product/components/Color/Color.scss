@@ -1,16 +1,4 @@
-@mixin colors {
-  &.white {
-    background-color: white;
-  }
-
-  &.red {
-    background-color: #f32321;
-  }
-
-  &.yellow {
-    background-color: #faf1b0;
-  }
-}
+@import "/src/style/mixin.scss";
 
 .color {
   display: flex;
@@ -37,15 +25,8 @@
     cursor: pointer;
   }
 
-  .colorButton {
-    @include colors;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    cursor: pointer;
-
-    &.selected {
-      border: double;
-    }
+  .color-button-box {
+    display: flex;
+    gap: 15px;
   }
 }

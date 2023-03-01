@@ -1,0 +1,9 @@
+$black: #000000;
+$red: #ff0000;
+$green: #00ff3c;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

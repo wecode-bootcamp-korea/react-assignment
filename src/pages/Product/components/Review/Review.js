@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Review.scss";
 
-const Review = () => {
+const Review = (props) => {
+  const { productData, color } = props;
+  const [isOpen, setIsOpen] = useState(false);
+  const [toggleText, setToggleText] = useState("더보기 ▼");
+
   return (
     <div className="review">
       <div className="user">
@@ -13,13 +17,26 @@ const Review = () => {
       </div>
       <div className="reviewTitle">배송도 빠르고 정말 좋아요.</div>
       <div className="reviewMain">
-        <div className="reviewMainContents">
-          주문한지 하루만에 배송이 도착해서 너무 좋았습니다.
-          <br />
-          다음에도 필요하면 또 여기서 시킬 것 같아요.
-        </div>
-        <span className="reviewMainHandler" onClick={() => {}}>
-          더보기 ▼
+        {productData.map((info, idx) => {
+          return productData[idx].color === color ? (
+            <div
+              key={info.id}
+              className={`reviewMainContents ${isOpen ? "open" : "hidden"}`}
+            >
+              주문한지 하루만에 배송이 도착해서 너무 좋았습니다.
+              <br />
+              다음에도 필요하면 또 여기서 시킬 것 같아요.
+            </div>
+          ) : null;
+        })}
+        <span
+          className="reviewMainHandler"
+          onClick={() => {
+            setIsOpen(!isOpen);
+            isOpen ? setToggleText("더보기 ▼") : setToggleText("접기 ▲");
+          }}
+        >
+          {toggleText}
         </span>
       </div>
     </div>

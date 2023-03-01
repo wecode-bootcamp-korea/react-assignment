@@ -1,5 +1,6 @@
 .review {
   width: 1024px;
+  padding-bottom: 40px;
 
   &Title {
     margin-bottom: 12px;
@@ -46,5 +47,13 @@
       text-decoration: underline;
       cursor: pointer;
     }
+  }
+
+  .open {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
   }
 }

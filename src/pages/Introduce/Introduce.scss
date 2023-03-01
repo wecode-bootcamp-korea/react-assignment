@@ -1,0 +1,74 @@
+@import "../../style/common.scss";
+@import "../../style/reset.scss";
+@import "../../style/variables.scss";
+
+.introduce {
+  @include center;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100vh;
+  margin: 0 auto;
+  font-size: 14px;
+
+  .introduce-box {
+    flex-direction: column;
+    padding: 14px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .introduce-wecode {
+    @include center;
+    width: 150px;
+    height: 150px;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 28px;
+  }
+
+  .introduce-detail {
+    padding-top: 10px;
+    h1:nth-child(1) {
+      font-weight: 700;
+      &:hover {
+        color: red;
+      }
+    }
+    h1:nth-child(2) {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+
+  input {
+    width: 110px;
+  }
+
+  .input-box {
+    margin: 5px 0;
+  }
+}
+
+.colorList {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+
+  .colorListBox {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .colorListColor {
+    width: 100px;
+    height: 100px;
+  }
+
+  .colorListName {
+    margin: 10px 0 5px 0;
+  }
+}

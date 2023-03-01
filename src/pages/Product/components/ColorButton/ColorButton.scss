@@ -1,0 +1,21 @@
+@import "/src/style/mixin.scss";
+
+.colorButton {
+  @include colors;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  button {
+    @include colors;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &.selected {
+    border: double;
+  }
+}
