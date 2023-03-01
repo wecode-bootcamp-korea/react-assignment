@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "골프공",
+    "color": "red",
+    "image": "/images/golf-ball-red.jpg",
+    "price": 300,
+    "count": 1,
+    "review": "(빨간색)주문한지 하루만에 배송이 도착해서 너무 좋았습니다.다음에도 필요하면 또 여기서 시킬 것 같아요."
+  },
+  {
+    "id": 2,
+    "name": "골프공",
+    "color": "yellow",
+    "image": "/images/golf-ball-yellow.jpg",
+    "price": 300,
+    "count": 1,
+    "review": "(노란색)주문한지 하루만에 배송이 도착해서 너무 좋았습니다.다음에도 필요하면 또 여기서 시킬 것 같아요."
+  },
+  {
+    "id": 3,
+    "name": "골프공",
+    "color": "white",
+    "image": "/images/golf-ball-white.jpg",
+    "price": 300,
+    "count": 1,
+    "review": "(흰색)주문한지 하루만에 배송이 도착해서 너무 좋았습니다.다음에도 필요하면 또 여기서 시킬 것 같아요."
+  }
+]
