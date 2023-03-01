@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ProductList.scss";
 
 const ProductList = () => {
+  const [productList, setProductList] = useState([]);
+  useEffect(() => {
+    fetch("/data/ProductListData.json")
+      .then((response) => response.json())
+      .then((result) => setProductList(result));
+  }, []);
+
   return (
     <div className="productList">
       <h2 className="title">고양이 리스트</h2>
       <div className="listContainer">
-        <div className="listBox">
+        {productList.map((list) => {
+          return (
+            <div key={list.id} className="listBox">
+              <img className="listImage" src={`${list.img_url}`} alt="cat" />
+              <span className="listTitle">{list.name}</span>
+              <span>{list.age}</span>
+              <span>{list.gender}</span>
+              <span>{list.livingPlace}</span>
+            </div>
+          );
+        })}
+        {/* <div className="listBox">
           <img className="listImage" src="/images/cat.jpeg" alt="cat" />
           <span className="listTitle">고양이</span>
           <span>나이 : 4살</span>
@@ -61,7 +79,7 @@ const ProductList = () => {
           <span>나이 : 2살</span>
           <span>성별 : male</span>
           <span>거주지 : 충청</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

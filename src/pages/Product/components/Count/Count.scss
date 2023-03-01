@@ -7,7 +7,7 @@
     display: flex;
     width: fit-content;
     height: 100%;
-    padding: 8px;
+
     border: 1px solid black;
     border-radius: 8px;
     gap: 8px;
@@ -23,6 +23,7 @@
       border: solid black;
       border-width: 0 1px;
       text-align: center;
+      margin: auto;
     }
   }
 

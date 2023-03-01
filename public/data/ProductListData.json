@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "img_url": "/images/cat.jpeg",
+    "name": "고양이",
+    "age": "나이 : 4살",
+    "gender": "성별 : male",
+    "livingPlace": "거주지 : 춘천"
+  },
+
+  {
+    "id": 2,
+    "img_url": "/images/cat.jpeg",
+    "name": "고냥이",
+    "age": "나이 : 14살",
+    "gender": "성별 : female",
+    "livingPlace": "거주지 : 양평"
+  },
+
+  {
+    "id": 3,
+    "img_url": "/images/cat.jpeg",
+    "name": "고용이",
+    "age": "나이 : 7살",
+    "gender": "성별 : male",
+    "livingPlace": "거주지 : 천안"
+  },
+
+  {
+    "id": 4,
+    "img_url": "/images/cat.jpeg",
+    "name": "모울이",
+    "age": "나이 : 1살",
+    "gender": "성별 : female",
+    "livingPlace": "거주지 : 부산"
+  },
+
+  {
+    "id": 5,
+    "img_url": "/images/cat.jpeg",
+    "name": "곰율이",
+    "age": "나이 : 3살",
+    "gender": "성별 : male",
+    "livingPlace": "거주지 : 노원"
+  },
+
+  {
+    "id": 6,
+    "img_url": "/images/cat.jpeg",
+    "name": "고울이",
+    "age": "나이 : 11살",
+    "gender": "성별 : male",
+    "livingPlace": "거주지 : 평양"
+  },
+
+  {
+    "id": 7,
+    "img_url": "/images/cat.jpeg",
+    "name": "고물이",
+    "age": "나이 : 9살",
+    "gender": "성별 : male",
+    "livingPlace": "거주지 : 전주"
+  },
+
+  {
+    "id": 8,
+    "img_url": "/images/cat.jpeg",
+    "name": "기양이",
+    "age": "나이 : 2살",
+    "gender": "성별 : male",
+    "livingPlace": "거주지 : 충청"
+  }
+]
