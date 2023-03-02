@@ -1,0 +1,51 @@
+@mixin colors {
+  &.white {
+    background-color: white;
+  }
+
+  &.red {
+    background-color: #f32321;
+  }
+
+  &.yellow {
+    background-color: #faf1b0;
+  }
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &Text {
+    display: flex;
+    gap: 10px;
+  }
+
+  .selected {
+    @include colors;
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+  }
+
+  &Btn {
+    @include colors;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .colorButton {
+    @include colors;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.selected {
+      border: double;
+    }
+  }
+}

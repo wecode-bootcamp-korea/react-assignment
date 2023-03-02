@@ -1,0 +1,84 @@
+@import '../../style/variables.scss';
+@import '../../style/mixin.scss';
+
+.introduce {
+  margin: auto;
+  width: 240px;
+  height: 330px;
+  border: 1px solid $black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+
+  img {
+    width: 200px;
+    height: 200px;
+    margin: 0px auto 10px auto;
+  }
+
+  .information {
+    justify-content: left;
+    margin: 0px 10px;
+
+    .myName {
+      font-size: 17px;
+      font-weight: bold;
+
+      &:hover {
+        cursor: pointer;
+        color: $green;
+        transition: 0.7s;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      margin: 0 6px;
+    }
+
+    .inputInfo {
+      display: flex;
+      margin: 10px 3px;
+
+      input {
+        height: 25px;
+      }
+
+      button {
+        font-size: 5px;
+      }
+    }
+  }
+}
+
+.colorBoxContainter {
+  display: flex;
+  justify-content: center;
+
+  .colorBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 170px;
+    height: 190px;
+    border: 1px solid $black;
+    border-radius: 10px;
+
+    .logoBox {
+      margin: 8px 2px;
+      display: flex;
+      width: 150px;
+      height: 100px;
+    }
+    .nameBox {
+      h2 {
+        margin: 3px;
+      }
+      p {
+        margin: 3px;
+      }
+    }
+  }
+}
