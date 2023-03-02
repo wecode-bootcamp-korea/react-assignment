@@ -1,0 +1,75 @@
+@import "../../style/variables.scss";
+@import "../../style/mixin.scss";
+
+.wrap_introduce {
+  height:100vh;
+
+  .box_introduce {
+    width:300px;
+    padding:15px;
+    margin: 0 auto;
+    border:1px solid #000;
+    border-radius:10px;
+    box-sizing:border-box;
+
+    .thumb_introduce {
+      display:block;
+      position:relative;
+      padding-top:100%;
+      border-radius:10px;
+      font-weight:bold;
+      font-size:20px;
+      color:#fff;
+      text-align:center;
+      background-color:#000;
+
+      &::after{
+        content:"";
+        position:absolute;
+        padding-top:100%;
+      }
+      
+      &.red{
+        background-color:$red;
+        }
+        &.yellow{
+        background-color:$yellow;
+        }
+        &.green{
+        background-color:$green;
+        }
+        &.blue{
+        background-color:$blue;
+        }
+    }
+    .tit_name {
+      display:block;
+      padding-top:10px;
+      font-weight:bold;
+      font-size:18px;
+      line-height:25px;
+      color:#000;
+
+      &:hover{
+        color:$green;
+      }
+    }
+
+    .txt_introduce {
+      display:block;
+      padding-top:5px;
+      font-size:15px;
+      line-height:18px;
+      color:#555
+    }
+
+    .link_product {
+      display:block
+    }
+  }
+  .group_introduce{
+    @include flexCenter;
+    width:1000px;
+    margin:0 auto;
+  }
+}
