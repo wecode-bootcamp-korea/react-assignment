@@ -39,6 +39,12 @@
     &Contents {
       margin-bottom: 12px;
       line-height: 150%;
+      &.show {
+        display: 'block';
+      }
+      &.block {
+        display: none;
+      }
     }
 
     &Handler {

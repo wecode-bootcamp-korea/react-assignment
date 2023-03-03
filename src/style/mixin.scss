@@ -1,0 +1,10 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fontStyle {
+  font-size: 10px;
+  font-weight: 300;
+}

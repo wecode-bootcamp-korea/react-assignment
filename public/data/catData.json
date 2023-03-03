@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "고양이",
+    "age": 4,
+    "gender": "male",
+    "address": "춘천"
+  },
+  {
+    "id": 2,
+    "title": "고냥이",
+    "age": 14,
+    "gender": "female",
+    "address": "양평"
+  },
+  {
+    "id": 3,
+    "title": "고용이",
+    "age": 7,
+    "gender": "male",
+    "address": "천안"
+  },
+  {
+    "id": 4,
+    "title": "모욜이",
+    "age": 1,
+    "gender": "female",
+    "address": "부산"
+  },
+  {
+    "id": 5,
+    "title": "곰율이",
+    "age": 3,
+    "gender": "male",
+    "address": "노원"
+  },
+  {
+    "id": 6,
+    "title": "고울이",
+    "age": 11,
+    "gender": "male",
+    "address": "평양"
+  },
+  {
+    "id": 7,
+    "title": "고물이",
+    "age": 9,
+    "gender": "male",
+    "address": "전주"
+  },
+  {
+    "id": 8,
+    "title": "기양이",
+    "age": 2,
+    "gender": "male",
+    "address": "충청"
+  }
+]

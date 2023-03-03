@@ -1,15 +1,17 @@
-import React from "react";
-import "./Count.scss";
+import React from 'react';
+import './Count.scss';
 
-const Count = () => {
+const Count = (props) => {
+  const { stock, state, setState } = props;
+
   return (
     <div className="count">
       <div className="countInput">
-        <button onClick={() => {}}>-</button>
-        <div className="countInputText">1</div>
-        <button onClick={() => {}}>+</button>
+        <button onClick={() => setState(state - 1)}>-</button>
+        <div className="countInputText">{state}</div>
+        <button onClick={() => setState(state + 1)}>+</button>
       </div>
-      <button className="resetBtn" onClick={() => {}}>
+      <button className="resetBtn" onClick={() => setState(1)}>
         reset
       </button>
     </div>

@@ -1,0 +1,43 @@
+@import '../../style/mixin.scss';
+@import '../../style/variables.scss';
+@import '../../style/common.scss';
+
+.Introduce {
+  border: 1px solid $black;
+  width: 250px;
+  height: 258px;
+  display: flex;
+  @include flexCenter;
+  flex-direction: column;
+  border-radius: 10px;
+
+  .container {
+    border: 1px solid $black;
+    width: 152px;
+    height: 140px;
+    background-color: $red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    .wecode {
+      color: white;
+    }
+  }
+  .secContainer {
+    margin-left: -88px;
+    margin-top: 10px;
+
+    .p {
+      margin-bottom: -15px;
+    }
+    &:hover .p {
+      color: $green;
+    }
+  }
+}
+.mapList {
+  display: flex;
+}
